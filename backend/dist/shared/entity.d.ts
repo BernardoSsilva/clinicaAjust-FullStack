@@ -1,5 +1,5 @@
 export declare class Entity<Props = any> {
-    id?: string;
+    id: string;
     props: Props;
-    constructor(_id: any, _props: any);
+    constructor(props: Props, id?: string);
 }

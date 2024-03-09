@@ -1,10 +1,10 @@
 import { randomUUID } from 'crypto';
 
 export class Entity<Props = any> {
-  public id?:string;
+  public id: string;
   public props: Props;
-  constructor(_id, _props) {
-    this.id = _id || randomUUID();
-    this.props = _props;
+  constructor(props: Props, id?: string) {
+    this.id = id || randomUUID();
+    this.props = props;
   }
 }
