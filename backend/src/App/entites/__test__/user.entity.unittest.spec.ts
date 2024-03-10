@@ -2,7 +2,7 @@ import { UserEntity } from '../user.entity';
 
 describe('user entity unit tests', () => {
   it('should be able to create a new user entity', () => {
-    const newEntity = new UserEntity('testID', {
+    const newEntity = new UserEntity({
       userName: 'nameTest',
       userEmail: 'testEmail',
       userPassword: 'testPassword',

@@ -17,7 +17,7 @@ export declare class UserEntity extends Entity<UserEntityProps> {
     get userLogin(): string;
     get createdAt(): Date;
     constructor(props: any);
-    validate(): Promise<void>;
+    validate(): Promise<string[]>;
     validateName(userName: any): Promise<"O nome é requirido" | "O nome deve ser formado por caracteres">;
     validateLogin(userLogin: any): Promise<"O login é requirido" | "O login deve ser formado por caracteres">;
     validateEmail(userEmail: any): Promise<"O email é requirido" | "O email deve ser formado por caracteres">;

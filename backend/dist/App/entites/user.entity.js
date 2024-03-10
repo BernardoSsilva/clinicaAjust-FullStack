@@ -34,7 +34,11 @@ class UserEntity extends entity_1.Entity {
         super(props);
         this.validate();
     }
-    async validate() { }
+    async validate() {
+        const errors = [];
+        const userNameErrors = await this.validateName(this.props.userName);
+        return errors;
+    }
     async validateName(userName) {
         if (!userName)
             return 'O nome é requirido';
