@@ -15,5 +15,11 @@ export declare class ImageEntity extends Entity<ImageProps> {
     set imageName(value: string);
     set sizeKb(value: number);
     get sizeKb(): number;
+    constructor(props: any);
+    validate(): Promise<string[]>;
+    validateDiagnosisId(diagnosisId: string): string | null;
+    validateStored(stored: string): string | null;
+    validateImageName(imageName: string): string | null;
+    validateSizeKb(sizeKb: number): string | null;
 }
 export {};

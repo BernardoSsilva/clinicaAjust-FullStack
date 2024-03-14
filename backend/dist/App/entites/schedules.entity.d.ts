@@ -10,5 +10,9 @@ export declare class ScheduleEntity extends Entity<ScheduleProps> {
     get authorId(): string;
     set client(value: string);
     get client(): string;
+    constructor(props: any);
+    validate(): Promise<string[]>;
+    validateAuthorId(authorId: string): string | null;
+    validateClient(client: string): string | null;
 }
 export {};
