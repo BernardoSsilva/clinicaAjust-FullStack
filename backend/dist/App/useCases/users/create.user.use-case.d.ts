@@ -1,7 +1,7 @@
 import { UserRepository } from 'src/App/repositories/user.repository';
-import { UserEntity } from './../../entites/user.entity';
+import { CreateUserDto } from 'src/shared/dtos/createUserDto';
 export declare class RegisterUserUseCase {
     private userRepository;
     constructor(userRepository: UserRepository);
-    execute(userData: UserEntity): Promise<void>;
+    execute(userData: CreateUserDto): Promise<void>;
 }
