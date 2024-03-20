@@ -22,6 +22,6 @@ export class InMemoryUserRepository implements UserRepository {
     this.users[editedUser] = values;
   }
   async findByEmail(email: string): Promise<UserEntity> {
-    return await this.users.find((user) => user.props.userEmail == email);
+    return await this.users.find((user) => user.userEmail == email);
   }
 }
