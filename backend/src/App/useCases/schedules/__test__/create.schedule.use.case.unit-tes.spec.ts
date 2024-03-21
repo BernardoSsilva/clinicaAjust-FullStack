@@ -3,8 +3,8 @@ import { InMemoryUserRepository } from '../../../../../test/in-memory-repositori
 import { CreateScheduleUseCase } from '../create.schedule.use.case';
 
 
-describe('Create user  use case unit tests', () => {
-  it('Should be able to create a new user', async () => {
+describe('Create a new schedule  use case unit tests', () => {
+  it('Should be able to create a new schedule', async () => {
     const repository = new InMemoryScheduleRepository();
     const useCase = new CreateScheduleUseCase(repository);
     const newScheduleData = {
