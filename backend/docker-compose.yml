@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  db:
+    build: .
+    container_name: clinicaAjust
+    image: postgres:latest
+    volumes:
+      - clinicaAjust:/var/lib/postgresql
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=clinicaAjust
+    ports:
+      - '3307:5432'
+
+volumes:
+  clinicaAjust:
