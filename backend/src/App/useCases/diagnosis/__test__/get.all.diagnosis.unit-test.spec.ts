@@ -9,9 +9,11 @@ describe('Get all diagnosis use case unit test', () => {
 
     repository.diagnosis.push(
       new DiagnosisEntity({
-       authorId:"test id",
-       createdAt: new Date(),
-       description:"Test description"
+        authorId: 'test id',
+        createdAt: new Date(),
+        client: 'test client',
+        title: 'test title',
+        description: 'Test description',
       }),
     );
     const result = useCase.execute();

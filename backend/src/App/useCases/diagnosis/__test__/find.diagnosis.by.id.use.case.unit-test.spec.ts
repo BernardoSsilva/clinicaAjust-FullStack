@@ -9,6 +9,8 @@ describe('Find schedule by id use case unit test', () => {
       authorId: 'test id',
       createdAt: new Date(),
       description: 'test description',
+      client: "test client",
+      title: "test title"
     });
 
     repository.diagnosis.push(newScheduleData);

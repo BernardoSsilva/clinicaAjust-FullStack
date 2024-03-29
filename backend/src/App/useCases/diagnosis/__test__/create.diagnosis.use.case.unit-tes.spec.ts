@@ -1,3 +1,4 @@
+import { title } from 'process';
 import { InMemoryDiagnosisRepository } from '../../../../../test/in-memory-repositories/diagnosis.in-memory.repository';
 import { CreateDiagnosisUseCase } from '../create.diagnosis.use.case';
 
@@ -8,6 +9,8 @@ describe('Create a new diagnosis  use case unit tests', () => {
     const newDiagnosisData = {
       authorId: 'test id',
       description: 'test description',
+      client: "test client",
+      title: "test title"
     };
 
     await useCase.execute(newDiagnosisData);

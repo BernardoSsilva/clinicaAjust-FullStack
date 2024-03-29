@@ -10,6 +10,8 @@ describe('Delete schedule by id use case unit test', () => {
       authorId: 'test id',
       description: 'test description',
       createdAt: new Date(),
+      client: "test client",
+      title: "test title"
     });
     repository.diagnosis.push(newDiagnosisData);
 

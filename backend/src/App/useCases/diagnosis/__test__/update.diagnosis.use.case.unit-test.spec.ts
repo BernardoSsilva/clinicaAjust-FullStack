@@ -9,6 +9,8 @@ describe('Update schedule by id use case unit test', () => {
     const newDiagnosisData = new DiagnosisEntity({
       authorId: 'test Id',
       createdAt: new Date(),
+      client: "test client",
+      title: "test title",
 
       description: 'test description',
     });
