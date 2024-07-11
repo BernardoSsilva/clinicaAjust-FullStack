@@ -1,1 +1,0 @@
-{"version":3,"file":"find.image.by.id.use.case.js","sourceRoot":"","sources":["../../../../src/App/useCases/images/find.image.by.id.use.case.ts"],"names":[],"mappings":";;;AAGA,MAAa,oBAAoB;IAC/B,YAAoB,eAAgC;QAAhC,oBAAe,GAAf,eAAe,CAAiB;IAAG,CAAC;IAExD,KAAK,CAAC,OAAO,CAAC,OAAe;QAC3B,OAAO,MAAM,IAAI,CAAC,eAAe,CAAC,QAAQ,CAAC,OAAO,CAAC,CAAC;IACtD,CAAC;CACF;AAND,oDAMC"}
